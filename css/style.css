@@ -1,0 +1,191 @@
+
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/* Tampilan Dasar */
+body {
+    font-family: Arial, sans-serif;
+    background: #f7f5ef;
+    color: #20352a;
+    line-height: 1.6;
+}
+
+.page {
+    width: 100%;
+}
+
+/* Header */
+header {
+    padding: 25px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #e4dfd2;
+}
+
+.brand {
+    font-size: 28px;
+    color: #20352a;
+}
+
+.brand span {
+    color: #b89658;
+}
+
+nav a {
+    margin-left: 25px;
+    text-decoration: none;
+    color: #20352a;
+    font-size: 14px;
+}
+
+nav a:hover {
+    color: #b89658;
+}
+
+/* Hero Section */
+#hero {
+    padding: 80px 8%;
+    text-align: center;
+}
+
+.logo-circle {
+    width: 110px;
+    height: 110px;
+    margin: 0 auto 25px;
+    border-radius: 50%;
+    background: #20352a;
+    color: #b89658;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+#hero h2 {
+    margin-bottom: 15px;
+    font-size: 32px;
+}
+
+#hero p {
+    margin-bottom: 25px;
+    color: #68756b;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background: #20352a;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.btn:hover {
+    background: #b89658;
+}
+
+/* Bagian Layanan */
+#layanan {
+    padding: 65px 8%;
+    background: white;
+    text-align: center;
+}
+
+.heading {
+    margin-bottom: 35px;
+    font-size: 30px;
+}
+
+.service-list {
+    display: flex;
+    gap: 20px;
+}
+
+.service-card {
+    flex: 1;
+    padding: 25px;
+    text-align: left;
+    background: #f7f5ef;
+    border: 1px solid #e4dfd2;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    border-color: #b89658;
+}
+
+.number {
+    color: #b89658;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.service-card h3 {
+    margin: 12px 0;
+}
+
+.service-card p {
+    color: #68756b;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+/* Footer */
+footer {
+    padding: 35px 8%;
+    background: #20352a;
+    color: white;
+    text-align: center;
+}
+
+footer p {
+    margin: 10px 0;
+    color: #d5ddd5;
+}
+
+.contact {
+    color: #b89658;
+}
+
+/* Tampilan HP */
+@media (max-width: 650px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    nav a {
+        margin: 0 8px;
+        font-size: 13px;
+    }
+
+    #hero {
+        padding: 55px 6%;
+    }
+
+    #hero h2 {
+        font-size: 25px;
+    }
+
+    #layanan {
+        padding: 45px 6%;
+    }
+
+    .service-list {
+        flex-direction: column;
+    }
+
+    .service-card {
+        width: 100%;
+    }
+}
